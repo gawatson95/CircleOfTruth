@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C026AFFE28412E930079CB19 /* CircleOfTruthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026AFFD28412E930079CB19 /* CircleOfTruthApp.swift */; };
+		C026B00028412E930079CB19 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026AFFF28412E930079CB19 /* HomeView.swift */; };
+		C026B00228412E960079CB19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C026B00128412E960079CB19 /* Assets.xcassets */; };
+		C026B00528412E960079CB19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C026B00428412E960079CB19 /* Preview Assets.xcassets */; };
+		C026B00C284132680079CB19 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026B00B284132680079CB19 /* QuestionView.swift */; };
+		C026B00F284139AC0079CB19 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026B00E284139AC0079CB19 /* ButtonView.swift */; };
+		C026B01128413CF90079CB19 /* MenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026B01028413CF90079CB19 /* MenuButtonView.swift */; };
+		C026B013284140050079CB19 /* GameSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026B012284140050079CB19 /* GameSetupView.swift */; };
+		C026B01928416B680079CB19 /* TextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026B01828416B680079CB19 /* TextExtension.swift */; };
+		C050DA9A285B80B200940825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C050DA99285B80B000940825 /* LaunchScreen.storyboard */; };
+		C050DA9D285B82B400940825 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C050DA9C285B82B400940825 /* LaunchView.swift */; };
+		C060D274284ED79D0049A927 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C060D273284ED79D0049A927 /* BundleExtension.swift */; };
+		C060D276284EDB460049A927 /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C060D275284EDB460049A927 /* PromptView.swift */; };
+		C087CE5328480AE60029B96C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C087CE5228480AE60029B96C /* ColorExtension.swift */; };
+		C08F600828579F3400126BEF /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F600728579F3400126BEF /* DividerView.swift */; };
+		C09491FC28591081001BF078 /* EditQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09491FB28591081001BF078 /* EditQuestionsView.swift */; };
+		C0A353202846804600F9FCF8 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A3531F2846804600F9FCF8 /* GameData.swift */; };
+		C0A353242847D0F200F9FCF8 /* CircleBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A353232847D0F200F9FCF8 /* CircleBackgroundView.swift */; };
+		C0A86F942849169D00D5D64A /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A86F932849169D00D5D64A /* HomeVM.swift */; };
+		C0A86F96284949D500D5D64A /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A86F95284949D500D5D64A /* PreviewProvider.swift */; };
+		C0B84316284FC1510099D2EF /* gameData.json in Resources */ = {isa = PBXBuildFile; fileRef = C0B84315284FC1510099D2EF /* gameData.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C026AFFA28412E930079CB19 /* CircleOfTruth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleOfTruth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C026AFFD28412E930079CB19 /* CircleOfTruthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleOfTruthApp.swift; sourceTree = "<group>"; };
+		C026AFFF28412E930079CB19 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C026B00128412E960079CB19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C026B00428412E960079CB19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C026B00B284132680079CB19 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		C026B00E284139AC0079CB19 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		C026B01028413CF90079CB19 /* MenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonView.swift; sourceTree = "<group>"; };
+		C026B012284140050079CB19 /* GameSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupView.swift; sourceTree = "<group>"; };
+		C026B01828416B680079CB19 /* TextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtension.swift; sourceTree = "<group>"; };
+		C050DA99285B80B000940825 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C050DA9C285B82B400940825 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		C060D273284ED79D0049A927 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
+		C060D275284EDB460049A927 /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
+		C087CE5228480AE60029B96C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		C08F600728579F3400126BEF /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		C090F1E6285BC8160008E611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C09491FB28591081001BF078 /* EditQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditQuestionsView.swift; sourceTree = "<group>"; };
+		C0A3531F2846804600F9FCF8 /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		C0A353232847D0F200F9FCF8 /* CircleBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBackgroundView.swift; sourceTree = "<group>"; };
+		C0A86F932849169D00D5D64A /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		C0A86F95284949D500D5D64A /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		C0B84315284FC1510099D2EF /* gameData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gameData.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C026AFF728412E930079CB19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C026AFF128412E920079CB19 = {
+			isa = PBXGroup;
+			children = (
+				C026AFFC28412E930079CB19 /* CircleOfTruth */,
+				C026AFFB28412E930079CB19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C026AFFB28412E930079CB19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C026AFFA28412E930079CB19 /* CircleOfTruth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C026AFFC28412E930079CB19 /* CircleOfTruth */ = {
+			isa = PBXGroup;
+			children = (
+				C090F1E6285BC8160008E611 /* Info.plist */,
+				C026AFFD28412E930079CB19 /* CircleOfTruthApp.swift */,
+				C050DA9B285B823500940825 /* LaunchScreen */,
+				C026B01528416B190079CB19 /* Extensions */,
+				C087CE4F2847FCDC0029B96C /* ViewModels */,
+				C026B00D2841399F0079CB19 /* Views */,
+				C026B01428416A150079CB19 /* Models */,
+				C0B84314284FB35B0099D2EF /* Data */,
+				C026B00128412E960079CB19 /* Assets.xcassets */,
+				C026B00328412E960079CB19 /* Preview Content */,
+			);
+			path = CircleOfTruth;
+			sourceTree = "<group>";
+		};
+		C026B00328412E960079CB19 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C026B00428412E960079CB19 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C026B00D2841399F0079CB19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C026AFFF28412E930079CB19 /* HomeView.swift */,
+				C0A353232847D0F200F9FCF8 /* CircleBackgroundView.swift */,
+				C026B012284140050079CB19 /* GameSetupView.swift */,
+				C026B00B284132680079CB19 /* QuestionView.swift */,
+				C060D275284EDB460049A927 /* PromptView.swift */,
+				C026B00E284139AC0079CB19 /* ButtonView.swift */,
+				C026B01028413CF90079CB19 /* MenuButtonView.swift */,
+				C08F600728579F3400126BEF /* DividerView.swift */,
+				C09491FB28591081001BF078 /* EditQuestionsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C026B01428416A150079CB19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0A3531F2846804600F9FCF8 /* GameData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C026B01528416B190079CB19 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C026B01828416B680079CB19 /* TextExtension.swift */,
+				C087CE5228480AE60029B96C /* ColorExtension.swift */,
+				C0A86F95284949D500D5D64A /* PreviewProvider.swift */,
+				C060D273284ED79D0049A927 /* BundleExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C050DA9B285B823500940825 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C050DA99285B80B000940825 /* LaunchScreen.storyboard */,
+				C050DA9C285B82B400940825 /* LaunchView.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		C087CE4F2847FCDC0029B96C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C0A86F932849169D00D5D64A /* HomeVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C0B84314284FB35B0099D2EF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C0B84315284FC1510099D2EF /* gameData.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C026AFF928412E930079CB19 /* CircleOfTruth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C026B00828412E960079CB19 /* Build configuration list for PBXNativeTarget "CircleOfTruth" */;
+			buildPhases = (
+				C026AFF628412E930079CB19 /* Sources */,
+				C026AFF728412E930079CB19 /* Frameworks */,
+				C026AFF828412E930079CB19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircleOfTruth;
+			productName = CircleOfTruth;
+			productReference = C026AFFA28412E930079CB19 /* CircleOfTruth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C026AFF228412E920079CB19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					C026AFF928412E930079CB19 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = C026AFF528412E930079CB19 /* Build configuration list for PBXProject "CircleOfTruth" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C026AFF128412E920079CB19;
+			productRefGroup = C026AFFB28412E930079CB19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C026AFF928412E930079CB19 /* CircleOfTruth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C026AFF828412E930079CB19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C026B00528412E960079CB19 /* Preview Assets.xcassets in Resources */,
+				C050DA9A285B80B200940825 /* LaunchScreen.storyboard in Resources */,
+				C0B84316284FC1510099D2EF /* gameData.json in Resources */,
+				C026B00228412E960079CB19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C026AFF628412E930079CB19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C060D274284ED79D0049A927 /* BundleExtension.swift in Sources */,
+				C0A353242847D0F200F9FCF8 /* CircleBackgroundView.swift in Sources */,
+				C0A86F96284949D500D5D64A /* PreviewProvider.swift in Sources */,
+				C0A86F942849169D00D5D64A /* HomeVM.swift in Sources */,
+				C026B00028412E930079CB19 /* HomeView.swift in Sources */,
+				C050DA9D285B82B400940825 /* LaunchView.swift in Sources */,
+				C026B00C284132680079CB19 /* QuestionView.swift in Sources */,
+				C026B00F284139AC0079CB19 /* ButtonView.swift in Sources */,
+				C09491FC28591081001BF078 /* EditQuestionsView.swift in Sources */,
+				C0A353202846804600F9FCF8 /* GameData.swift in Sources */,
+				C026B01928416B680079CB19 /* TextExtension.swift in Sources */,
+				C026B01128413CF90079CB19 /* MenuButtonView.swift in Sources */,
+				C026B013284140050079CB19 /* GameSetupView.swift in Sources */,
+				C026AFFE28412E930079CB19 /* CircleOfTruthApp.swift in Sources */,
+				C060D276284EDB460049A927 /* PromptView.swift in Sources */,
+				C08F600828579F3400126BEF /* DividerView.swift in Sources */,
+				C087CE5328480AE60029B96C /* ColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C026B00628412E960079CB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C026B00728412E960079CB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C026B00928412E960079CB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CircleOfTruth/Preview Content\"";
+				DEVELOPMENT_TEAM = VQAXAL86KV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CircleOfTruth/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CircleOfTruth;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = me.watson.grant.CircleOfTruth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C026B00A28412E960079CB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CircleOfTruth/Preview Content\"";
+				DEVELOPMENT_TEAM = VQAXAL86KV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CircleOfTruth/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CircleOfTruth;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = me.watson.grant.CircleOfTruth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C026AFF528412E930079CB19 /* Build configuration list for PBXProject "CircleOfTruth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C026B00628412E960079CB19 /* Debug */,
+				C026B00728412E960079CB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C026B00828412E960079CB19 /* Build configuration list for PBXNativeTarget "CircleOfTruth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C026B00928412E960079CB19 /* Debug */,
+				C026B00A28412E960079CB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C026AFF228412E920079CB19 /* Project object */;
+}
