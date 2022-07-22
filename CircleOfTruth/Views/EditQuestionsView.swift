@@ -9,15 +9,14 @@ import SwiftUI
 
 struct EditQuestionsView: View {
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject private var vm: HomeVM
     
-    @ObservedObject private var vm: HomeVM
     @State private var showAddScreen: Bool = false
     @State private var newQuestionText: String = ""
 
     @State private var editText: String = ""
     
     init() {
-        vm = HomeVM()
         UITableView.appearance().backgroundColor = .clear
     }
     
@@ -121,7 +120,7 @@ extension EditQuestionsView {
                         .foregroundColor(Color.theme.background)
                 }
                 
-                ButtonView(buttonText: "Add", buttonColor: Color.theme.accent, height: 35, font: .headline)
+                ButtonView(buttonText: "Add", buttonColor: newQuestionText.isEmpty ? Color.gray : Color.theme.accent, height: 35, font: .headline)
                     .onTapGesture {
                         let question = newQuestionText
                         vm.questions.append(question)

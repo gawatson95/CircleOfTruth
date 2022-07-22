@@ -64,31 +64,7 @@ struct HomeView: View {
                         .padding(.bottom, 5)
                 }
             
-                HStack {
-                    ButtonView(buttonText: "Dodge", buttonColor: vm.timeRemaining < 0.01 ? .red : vm.dodgeColor)
-                        .allowsHitTesting(vm.truthSelected || !vm.showQuestion ? false : true)
-                        .onTapGesture {
-                            vm.stopTimer()
-                            withAnimation {
-                                vm.dodgeSelected = true
-                                vm.truthSelected = false
-                            }
-                            vm.buttonColor()
-                        }
-                    
-                    ButtonView(buttonText: "Truth", buttonColor: vm.timeRemaining < 0.01 ? .gray : vm.truthColor)
-                        .allowsHitTesting(vm.dodgeSelected || !vm.showQuestion ? false : true)
-                        .onTapGesture {
-                            vm.stopTimer()
-                            withAnimation {
-                                vm.truthSelected = true
-                                vm.dodgeSelected = false
-                            }
-                            vm.buttonColor()
-                        }
-                }
-                .padding(.horizontal)
-                .padding(.bottom, 5)
+                responseButtons
             }
             .onReceive(vm.timer) { _ in
                 vm.activeProgress()
@@ -98,9 +74,39 @@ struct HomeView: View {
             }
             .onAppear() {
                 vm.stopTimer()
-                //vm.showSetup()
+                vm.showSetup()
             }
         }
+    }
+}
+
+extension HomeView {
+    private var responseButtons: some View {
+        HStack {
+            ButtonView(buttonText: "Dodge", buttonColor: vm.timeRemaining < 0.01 ? .red : vm.dodgeColor)
+                .allowsHitTesting(vm.truthSelected || !vm.showQuestion ? false : true)
+                .onTapGesture {
+                    vm.stopTimer()
+                    withAnimation {
+                        vm.dodgeSelected = true
+                        vm.truthSelected = false
+                    }
+                    vm.buttonColor()
+                }
+            
+            ButtonView(buttonText: "Truth", buttonColor: vm.timeRemaining < 0.01 ? .gray : vm.truthColor)
+                .allowsHitTesting(vm.dodgeSelected || !vm.showQuestion ? false : true)
+                .onTapGesture {
+                    vm.stopTimer()
+                    withAnimation {
+                        vm.truthSelected = true
+                        vm.dodgeSelected = false
+                    }
+                    vm.buttonColor()
+                }
+        }
+        .padding(.horizontal)
+        .padding(.bottom, 5)
     }
 }
 
