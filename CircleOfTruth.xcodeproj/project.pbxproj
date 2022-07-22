@@ -16,6 +16,8 @@
 		C026B01128413CF90079CB19 /* MenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026B01028413CF90079CB19 /* MenuButtonView.swift */; };
 		C026B013284140050079CB19 /* GameSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026B012284140050079CB19 /* GameSetupView.swift */; };
 		C026B01928416B680079CB19 /* TextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C026B01828416B680079CB19 /* TextExtension.swift */; };
+		C04DA2B7288B1ACB009DFEA6 /* ReviewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04DA2B6288B1ACB009DFEA6 /* ReviewHandler.swift */; };
+		C04DA2B9288B1B8D009DFEA6 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04DA2B8288B1B8D009DFEA6 /* UserDefaultKeys.swift */; };
 		C050DA9A285B80B200940825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C050DA99285B80B000940825 /* LaunchScreen.storyboard */; };
 		C050DA9D285B82B400940825 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C050DA9C285B82B400940825 /* LaunchView.swift */; };
 		C060D274284ED79D0049A927 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C060D273284ED79D0049A927 /* BundleExtension.swift */; };
@@ -41,6 +43,8 @@
 		C026B01028413CF90079CB19 /* MenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonView.swift; sourceTree = "<group>"; };
 		C026B012284140050079CB19 /* GameSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupView.swift; sourceTree = "<group>"; };
 		C026B01828416B680079CB19 /* TextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtension.swift; sourceTree = "<group>"; };
+		C04DA2B6288B1ACB009DFEA6 /* ReviewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewHandler.swift; sourceTree = "<group>"; };
+		C04DA2B8288B1B8D009DFEA6 /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
 		C050DA99285B80B000940825 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C050DA9C285B82B400940825 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		C060D273284ED79D0049A927 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 				C090F1E6285BC8160008E611 /* Info.plist */,
 				C026AFFD28412E930079CB19 /* CircleOfTruthApp.swift */,
 				C050DA9B285B823500940825 /* LaunchScreen */,
+				C04DA2BA288B1C1F009DFEA6 /* Reviews */,
 				C026B01528416B190079CB19 /* Extensions */,
 				C087CE4F2847FCDC0029B96C /* ViewModels */,
 				C026B00D2841399F0079CB19 /* Views */,
@@ -141,6 +146,15 @@
 				C060D273284ED79D0049A927 /* BundleExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C04DA2BA288B1C1F009DFEA6 /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				C04DA2B6288B1ACB009DFEA6 /* ReviewHandler.swift */,
+				C04DA2B8288B1B8D009DFEA6 /* UserDefaultKeys.swift */,
+			);
+			path = Reviews;
 			sourceTree = "<group>";
 		};
 		C050DA9B285B823500940825 /* LaunchScreen */ = {
@@ -249,11 +263,13 @@
 				C026B00C284132680079CB19 /* QuestionView.swift in Sources */,
 				C026B00F284139AC0079CB19 /* ButtonView.swift in Sources */,
 				C09491FC28591081001BF078 /* EditQuestionsView.swift in Sources */,
+				C04DA2B9288B1B8D009DFEA6 /* UserDefaultKeys.swift in Sources */,
 				C0A353202846804600F9FCF8 /* GameData.swift in Sources */,
 				C026B01928416B680079CB19 /* TextExtension.swift in Sources */,
 				C026B01128413CF90079CB19 /* MenuButtonView.swift in Sources */,
 				C026B013284140050079CB19 /* GameSetupView.swift in Sources */,
 				C026AFFE28412E930079CB19 /* CircleOfTruthApp.swift in Sources */,
+				C04DA2B7288B1ACB009DFEA6 /* ReviewHandler.swift in Sources */,
 				C060D276284EDB460049A927 /* PromptView.swift in Sources */,
 				C08F600828579F3400126BEF /* DividerView.swift in Sources */,
 				C087CE5328480AE60029B96C /* ColorExtension.swift in Sources */,

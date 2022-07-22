@@ -63,7 +63,6 @@ struct HomeView: View {
                         .padding(.horizontal)
                         .padding(.bottom, 5)
                 }
-            
                 responseButtons
             }
             .onReceive(vm.timer) { _ in
@@ -73,6 +72,7 @@ struct HomeView: View {
                 GameSetupView(numberOfPlayers: $numberOfPlayers)
             }
             .onAppear() {
+                ReviewHandler.requestReview()
                 vm.stopTimer()
                 vm.showSetup()
             }
