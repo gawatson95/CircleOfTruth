@@ -19,8 +19,7 @@ struct ColorTheme {
     let greenBackground = Color("GreenBackground")
     let background = Color("Background")
     let background2 = Color("Background2")
-    let accent = Color("Accent")
-    let accent2 = Color("Accent2")
+    let accent = Color("AccentColor")
     let listBackground = Color("ListBackground")
 }
 

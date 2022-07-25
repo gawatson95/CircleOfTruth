@@ -59,7 +59,7 @@ struct LaunchView: View {
                 HStack(alignment: .bottom, spacing: 0) {
                     Text("Loading")
                     
-                    ForEach(ellip.indices) { index in
+                    ForEach(ellip.indices, id: \.self) { index in
                             Text(ellip[index])
                                 .fontWeight(.heavy)
                                 .offset(y: counter == index ? -3 : 0)
