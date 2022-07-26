@@ -16,7 +16,7 @@ class ReviewHandler {
         count += 1
         UserDefaults.standard.set(count, forKey: UserDefaultKeys.appStartUpsCountKey)
         
-        if count >= 4 {
+        if count == 4 {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                 if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
                     SKStoreReviewController.requestReview(in: scene)
