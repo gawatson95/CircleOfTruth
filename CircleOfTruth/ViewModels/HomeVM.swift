@@ -93,10 +93,6 @@ class HomeVM: ObservableObject {
         if questions.isEmpty == false {
             questions.remove(at: 0)
         }
-        if gameData.first(where: { $0.category == "adult" } )!.prompts.contains(prompt) {
-            guard let index = prompts.firstIndex(of: prompt) else { return }
-            prompts.remove(at: index)
-        }
     }
     
     func buttonColor() {
@@ -113,14 +109,6 @@ class HomeVM: ObservableObject {
     
     func updateCategory() {
         prompts = gameData.first(where: { $0.category == "friends" } )?.prompts ?? []
-        
-        if category == "Friends (NSFW)" {
-            if let adultPrompts = gameData.first(where: { $0.category == "adult" })?.prompts {
-                prompts.append(contentsOf: adultPrompts)
-            } else {
-                return
-            }
-        }
     }
     
     func shuffle() {
@@ -142,8 +130,6 @@ class HomeVM: ObservableObject {
         
         if category == "Friends" {
             defaults.set(userQuestions, forKey: "userFriendQuestions")
-        } else if category == "Friends (NSFW)" {
-            defaults.set(userQuestions, forKey: "userNSFWQuestions")
         } else if category == "Custom" {
             defaults.set(userQuestions, forKey: "userCustomQuestions")
         }
@@ -155,12 +141,6 @@ class HomeVM: ObservableObject {
                 questions = savedQuestions
             } else {
                 questions = gameData.first(where: { $0.category == "friends"})!.questions
-            }
-        } else if category == "Friends (NSFW)" {
-            if let savedQuestions = defaults.object(forKey: "userNSFWQuestions") as? [String] {
-                questions = savedQuestions
-            } else {
-                questions = gameData.first(where: { $0.category == "adult"})!.questions
             }
         } else if category == "Custom" {
             if let savedQuestions = defaults.object(forKey: "userCustomQuestions") as? [String] {
